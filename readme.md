@@ -28,7 +28,12 @@ We provides the implementation of **DiffGOP**, an end-to-end diffusion framework
 </p>
 
 
-## Code of DiffGOP-BD
+## DiffGOP-BD Environment Setup
 
-### Environment Setup
+```bash
+cd DiffGOP-BD
+conda env create -f environment.yaml
+conda activate DiffGOP-BD
+The codebases are built on top of [Detectron2](https://github.com/facebookresearch/detectron2).
+```
 

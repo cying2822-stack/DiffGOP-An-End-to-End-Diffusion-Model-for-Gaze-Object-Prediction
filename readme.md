@@ -4,10 +4,31 @@ Official repository for DiffGOP: An End-to-End Diffusion Model for Gaze Object P
 We provides the implementation of **DiffGOP**, an end-to-end diffusion framework for gaze object prediction. DiffGOP employs frequency-aware human-centric conditioning to capture human–target interactions and guide iterative denoising. It includes two approaches: **DiffGOP-BD**, which progressively refines gaze-target bounding boxes through box-level diffusion, and **DiffGOP-QD**, which refines gaze-target predictions through query-level diffusion. The repository provides:
 
    - code and pretrained model weights of DiffGOP-BD and DiffGOP-QD.
-   - Data of GOO_Synth and GOO_Real.
+   - Data of GOO_Synth, GOO_Real and DiSG.
+
+![Introduction of DiffGOP](assets/introduction.png)
+
+<p align="center">
+  <em>Figure 1. Comparison between conventional one-step prediction and DiffGOP, which progressively refines gaze-target predictions through iterative diffusion denoising.</em>
+</p>
 
 
-# DiffGOP of Framework
+# DiffGOP Framework
+![DiffGOP Framework](assets/Framework.png)
 
-# Code of DiffGOP-BD
+<p align="center">
+  <em>Overall architecture of DiffGOP.</em>
+</p>
+
+![Different Objects](assets/differentOB.png)
+
+
+<p align="center">
+  <em>Box-level denoising in DiffGOP-BD and query-level denoising in DiffGOP-QD.</em>
+</p>
+
+
+## Code of DiffGOP-BD
+
+### Environment Setup
 

@@ -34,6 +34,9 @@ We provides the implementation of **DiffGOP**, an end-to-end diffusion framework
 cd DiffGOP-BD
 conda env create -f environment.yaml
 conda activate DiffGOP-BD
-The codebases are built on top of [Detectron2](https://github.com/facebookresearch/detectron2).
 ```
+The codebases are built on top of [Detectron2](https://github.com/facebookresearch/detectron2).
 
+```bash
+python train_net.py --num-gpus 1 --config-file configs/diffdet.coco.res50.yaml
+```

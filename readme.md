@@ -32,7 +32,32 @@ We provides the implementation of **DiffGOP**, an end-to-end diffusion framework
 
 ## Dataset
 
+We train our model on GOO-Real, GOO-Synth and DiSG datasets respectively.
 
+## Datasets
+
+- **GOO-Real:** [Download](https://pan.baidu.com/s/1AeZp2oSL4cGW64kPIMocSg?pwd=629r) (extraction code: `629r`).
+- **GOO-Synth:** [Download](https://pan.baidu.com/s/12sCRsxj6mUtrJIvJ3I_jZA?pwd=ka7w) (extraction code: `ka7w`).
+
+
+
+```bash
+If you want to train on GOO-Real or GOO-Synth dataset, please keep the data structure as follows:
+├── datasets
+   └── coco
+      └── annotations
+            └── cate.txt
+            └── train2017.json
+            └── val2017.json
+      └── train2017
+            ├── 0.png
+            ├── 1.png
+            ├── ...
+      └── val2017
+            ├── 3609.png  
+            ├── 3610.png
+            ├── ...
+```
 
 
 ## DiffGOP-BD Environment Setup
